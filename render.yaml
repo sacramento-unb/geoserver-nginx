@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: geoserver-nginx
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    region: oregon
